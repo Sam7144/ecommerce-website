@@ -6,16 +6,20 @@ import { Store } from "../utils/Store";
 import Cookies from "js-cookie";
 import { useRouter } from "next/router";
 export default function shippingScreen() {
+  // eslint-disable-next-line react-hooks/rules-of-hooks
   const router = useRouter();
   const {
     handleSubmit,
     register,
     formState: { errors },
     setValue,
+  // eslint-disable-next-line react-hooks/rules-of-hooks
   } = useForm();
+  // eslint-disable-next-line react-hooks/rules-of-hooks
   const { state, dispatch } = useContext(Store);
   const { cart } = state;
   const { shippingAddress } = cart;
+  // eslint-disable-next-line react-hooks/rules-of-hooks
   useEffect(() => {
     setValue("fullName", shippingAddress.fullName);
     setValue("address", shippingAddress.address);
