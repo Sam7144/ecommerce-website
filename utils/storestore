@@ -1,5 +1,0 @@
-const existItem=state.cart.cartItems.find(
-                (item)=>item.slug===newItem.slug
-            );
-            :[...state.cart.cartItems,newItem];
-            return{...state,cart:{...state.cart,cartItems}};

@@ -9,7 +9,9 @@ import {useRouter} from 'next/router'
 import axios from "axios";
 import { toast } from "react-toastify";
 function cartScreen() {
+  // eslint-disable-next-line react-hooks/rules-of-hooks
   const router=useRouter()
+  // eslint-disable-next-line react-hooks/rules-of-hooks
   const { state, dispatch } = useContext(Store);
   const {
     cart: { cartItems },
