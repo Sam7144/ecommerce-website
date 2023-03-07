@@ -6,7 +6,7 @@ import { Store } from "../utils/Store";
 import Image from "next/image";
 import { useRouter } from "next/router";
 import { toast } from "react-toastify";
-import { getError } from "@/utils/error";
+import  getError  from "../utils/error";
 import axios from "axios";
 import Cookies from 'js-cookie'
 

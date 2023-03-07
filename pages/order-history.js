@@ -1,5 +1,5 @@
 import React,{useEffect, useReducer} from 'react';
-import {getError} from '../utils/error';
+import getError from '../utils/error';
 import axios from 'axios';
 import Layout from '@/components/layout';
 import Link from 'next/link';

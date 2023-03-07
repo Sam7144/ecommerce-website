@@ -1,5 +1,5 @@
 import Layout from '@/components/layout';
-import { getError } from '@/utils/error';
+import  getError  from '../utils/error';
 import axios from 'axios';
 import { signIn, useSession } from 'next-auth/react'
 import React, { useEffect } from 'react'

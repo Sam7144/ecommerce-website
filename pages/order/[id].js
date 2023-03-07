@@ -1,5 +1,5 @@
 import Layout from "@/components/layout";
-import { getError } from "@/utils/error";
+import  getError  from "@/utils/error";
 import axios from "axios";
 import Image from "next/image";
 import Link from "next/link";
