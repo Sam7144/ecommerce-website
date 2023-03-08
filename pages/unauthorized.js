@@ -1,5 +1,5 @@
 import Layout from '@/components/layout'
-import { useRouter } from 'next/router'
+import  useRouter  from 'next/router'
 import React from 'react'
 
 export default function Unauthorized() {

@@ -1,4 +1,3 @@
-
 // import 'bootstrap/dist/css/bootstrap.css'
 import Layout from "@/components/layout"
 import ProductsItems from "@/components/productitems"

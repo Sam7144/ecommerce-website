@@ -7,7 +7,7 @@ export default function App({ Component, pageProps:{session,...pageProps} }) {
     <SessionProvider session={session}>
        <StoreProvider>
         {Component.auth?(
-          <Auth>
+          <Auth adminOnly={Component.auth.adminOnly}>
             <Component {...pageProps} />
           </Auth>
         ):<Component {...pageProps} />}
@@ -25,6 +25,9 @@ function Auth({ children, adminOnly }) {
   });
   if (status === 'loading') {
     return <div>Loading...</div>;
+  }
+  if(adminOnly&& !session.user.isAdmin){
+    router.push('/unauthorized?message=admin login required')
   }
   return children;
 }
